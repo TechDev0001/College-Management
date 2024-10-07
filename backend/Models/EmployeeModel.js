@@ -22,10 +22,10 @@ const EmployeeSchema = new Schema({
     profileImage: {
         type: String
     },
-    // salary: {
-    //     type: Number,
-    //     required: true
-    // },
+    salary: {
+        type: Number,
+        required: true
+    },
     createdAt: {
         type: Date,
         default: new Date()
