@@ -12,7 +12,11 @@ const PORT = process.env.PORT || 1000;
 
 require('./Models/db');
 //middleware setup
-app.use(cors());
+app.use(cors({
+    origin:["https://deploy-mern-1whq.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+}));
 app.use(bodyParser.json());
 
 app.use('/api/employees', EmployeeRoutes);
