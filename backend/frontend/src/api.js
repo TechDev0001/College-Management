@@ -1,4 +1,4 @@
-const BASE_URL = `${window.location.origin}`;
+const BASE_URL = 'http://localhost:1000';
 
 export const GetAllEmployees = async (search = '', page = 1, limit = 5) => {
     const url =
