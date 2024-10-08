@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:1000';
+const BASE_URL = 'https://college-management-3-xlhp.onrender.com';
 
 export const GetAllEmployees = async (search = '', page = 1, limit = 5) => {
     const url =
