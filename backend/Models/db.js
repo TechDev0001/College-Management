@@ -5,8 +5,7 @@ console.log("mongoUrl:",mongo_url)
 mongoose.connect(mongo_url,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false, // Optional, if you're using findOneAndUpdate
-    useCreateIndex: true
+   
 })
 
 
